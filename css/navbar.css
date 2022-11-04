@@ -10,65 +10,32 @@ body {
 }
 
 /* Start Navigation Bar ---------------------------------------------------*/
-a.small:hover {
-  background-color: lightgrey;
-  border-radius: 10px;
-  font-size: 20px;
-}
 
-a.signin:hover {
+/* a.signin:hover {
   background-color: lightgrey;
   border-radius: 10px;
   font-size: 20px;
 }
 
 a .img:hover {
-  height: 65%;
+  height: 120%;
 }
 
 a.logo {
   font-size: 30px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 a.logo img {
   margin-top: 5px;
-  height: 50%;
+  height: 100%;
   transition: .3s;
 }
 
 a.signin {
   margin-right: 10px;
-}
-
-a.small {
-  padding: 10px 10px 10px 10px;
-  text-decoration: none;
-}
-
-a {
-  padding: 10px 10px 10px 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  margin-left: 5px;
-  transition: 0.3s;
-}
-
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  height: 80px;
-  position: absolute;
-  border-bottom: 2px solid grey;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 10px 20px 20px 20px'
-}
-
+} */
+/* 
 navleft {
   align-items: center;
   display: flex;
@@ -90,28 +57,28 @@ navright {
   height: 50%;
   border-radius: 10px;
   padding-left: 5px;
+} */
+
+a.nav {
+  padding: 7px 7px 7px 7px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s;
 }
+
+a.nav:hover {
+  background-color: lightgrey;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+nav {
+  text-align: center;
+  width: 95vw;
+  position: absolute;
+  margin-top: 10px;
+  padding: 10px 20px 20px 20px;
+}
+
 /* End Navigation Bar ---------------------------------------------------*/
-
-
-
-/* Start Trending ---------------------------------------------------*/
-a.trending {
-  margin-top: 100px;
-  transition: .3s;
-}
-
-a.trending:hover {
-  border-color: lightgrey;
-  border-left: 10px;
-  border-bottom: 10px;
-}
-
-.trendingHeader {
-  margin: 20px;
-  padding: 10px;
-  border: 2px black solid;
-  border-radius: 15px;
-}
-/* End Trending ---------------------------------------------------*/
-
