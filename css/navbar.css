@@ -9,6 +9,11 @@ body {
   display: flex;
 }
 
+head {
+  align-items: center;
+  background-image: url('transparentRadicubsLogo.png');
+}
+
 /* Start Navigation Bar ---------------------------------------------------*/
 
 /* a.signin:hover {
@@ -82,3 +87,4 @@ nav {
 }
 
 /* End Navigation Bar ---------------------------------------------------*/
+
