@@ -2,16 +2,12 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
 }
 
 body {
   overflow-x: hidden;
-  display: flex;
-}
-
-head {
-  align-items: center;
-  background-image: url('transparentRadicubsLogo.png');
 }
 
 /* Start Navigation Bar ---------------------------------------------------*/
@@ -65,26 +61,50 @@ navright {
 } */
 
 a.nav {
-  padding: 7px 7px 7px 7px;
+  padding: 9px 9px 9px 9px;
   text-decoration: none;
-  color: black;
-  font-size: 16px;
+  color: white;
+  font-size: 15px;
   transition: 0.3s;
+  background-color: rgba(0, 255, 0, .001);
 }
 
 a.nav:hover {
-  background-color: lightgrey;
+  background-color: black;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-nav {
+.navTitle nav {
   text-align: center;
-  width: 95vw;
-  position: absolute;
   margin-top: 10px;
-  padding: 10px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(0, 255, 0, 20%);
+  border-radius: 15px 15px 0px 0px;
+  margin: 0% 28%;
 }
 
 /* End Navigation Bar ---------------------------------------------------*/
 
+/* Title + Background -------------------------------- */
+.navTitle {
+  text-align: center;
+  border-radius: 10px;
+  background-image: url('transparentRadicubsLogo.png');
+  background-repeat: no-repeat;
+}
+
+.navTitle h {
+  background-color: rgba(0, 255, 0, .001);
+}
+
+.navTitle .title {
+  padding: 13% 0%;
+  text-align: center;
+  font-size: 100px;
+  background-color: rgba(0, 255, 0, 20%);
+  border-radius: 0px 0px 15px 15px;
+  margin: 0% 28%;
+}
+
+/* End Title + Background -------------------------------- */
