@@ -89,9 +89,8 @@ a.nav:hover {
 /* Title + Background -------------------------------- */
 .navTitle {
   text-align: center;
-  border-radius: 10px;
-  background-image: url('transparentRadicubsLogo.png');
-  background-repeat: no-repeat;
+  display: block;
+  background-image: url("/radicubs_logo.png");
 }
 
 .navTitle h {
