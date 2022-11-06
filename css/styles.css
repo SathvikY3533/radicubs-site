@@ -63,25 +63,30 @@ navright {
 a.nav {
   padding: 9px 9px 9px 9px;
   text-decoration: none;
+  font-weight: bolder;
   color: white;
   font-size: 15px;
-  transition: 0.3s;
+  transition: 0.5s;
   background-color: rgba(0, 255, 0, .001);
+  text-shadow: -3px 2px 2px #cccccc;
 }
 
 a.nav:hover {
   background-color: black;
+  color: rgba(0, 255, 0, 100%);;
   border-radius: 10px;
   font-size: 18px;
+  text-shadow: none;
 }
 
 .navTitle nav {
   text-align: center;
   margin-top: 10px;
   padding: 20px 20px 20px 20px;
-  background-color: rgba(0, 255, 0, 20%);
+  background-color: rgba(0, 255, 0, 50%);
   border-radius: 15px 15px 0px 0px;
   margin: 0% 28%;
+  margin-top: 10px;
 }
 
 /* End Navigation Bar ---------------------------------------------------*/
@@ -89,21 +94,34 @@ a.nav:hover {
 /* Title + Background -------------------------------- */
 .navTitle {
   text-align: center;
-  display: block;
-  background-image: url("/radicubs_logo.png");
+  background-image: url(../spongebobGif.gif) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .navTitle h {
   background-color: rgba(0, 255, 0, .001);
+  text-shadow: -6px 4px 2px #cccccc;
 }
 
 .navTitle .title {
   padding: 13% 0%;
   text-align: center;
   font-size: 100px;
-  background-color: rgba(0, 255, 0, 20%);
-  border-radius: 0px 0px 15px 15px;
+  background-color: rgba(0, 255, 0, 50%);
   margin: 0% 28%;
+}
+
+.socials {
+  text-align: center;
+  background-color: rgba(0, 255, 0, 50%);
+  margin: 0% 28%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.socials a.socialLogo img {
+  background-color: rgba(0, 255, 0, .001);
 }
 
 /* End Title + Background -------------------------------- */
