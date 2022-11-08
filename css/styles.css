@@ -104,6 +104,10 @@ a.nav:hover {
   top: 0;
   left: 0;
   position: fixed;
+  background-image: url('../spongebobGif.gif') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .navTitle h {
