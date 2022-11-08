@@ -62,14 +62,14 @@ navright {
 } */
 
 a.nav {
-  padding: .5vw;
+  padding: .4vw;
   text-decoration: none;
   font-weight: bolder;
   color: black;
   font-size: 1.25vw;
   transition: 0.5s;
   background-color: transparent;
-  text-shadow: -3px 2px 2px #cccccc;
+  text-shadow: -.2vw .1vw 2px #cccccc;
 }
 
 a.nav:hover {
@@ -98,16 +98,11 @@ a.nav:hover {
 
 #coverVideo {
   z-index:-1;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   border-radius: 3px;
-  top: 0;
-  left: 0;
+  top: 0 !important;
+  left: 0 !important;
   position: fixed;
-  background-image: url('../spongebobGif.gif') !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 }
 
 .navTitle h {
@@ -202,8 +197,9 @@ footer .socials a.socialLogo img {
 
 footer .organizationInfo {
   color: white;
-  padding-left: 27vw;
+  padding-left: 30vw;
   padding-bottom: .5vw;
+  font-size: 1vw;
 }
 
 /* End Footer Styles ------------------------ */
