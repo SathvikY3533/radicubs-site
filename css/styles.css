@@ -3,11 +3,12 @@
 * {
   font-family: 'Roboto', sans-serif;
   background-color: black;
-  color: white;
+  color: black;
 }
 
 body {
   overflow-x: hidden;
+  background-color: transparent;
 }
 
 /* Start Navigation Bar ---------------------------------------------------*/
@@ -61,32 +62,28 @@ navright {
 } */
 
 a.nav {
-  padding: 9px 9px 9px 9px;
+  padding: .5vw;
   text-decoration: none;
   font-weight: bolder;
-  color: white;
-  font-size: 15px;
+  color: black;
+  font-size: 1.25vw;
   transition: 0.5s;
-  background-color: rgba(0, 255, 0, .001);
+  background-color: transparent;
   text-shadow: -3px 2px 2px #cccccc;
 }
 
 a.nav:hover {
   background-color: black;
-  color: rgba(0, 255, 0, 100%);;
-  border-radius: 10px;
-  font-size: 18px;
+  color: rgb(0, 199, 0);
+  border-radius: 8px;
+  font-size: 1.5vw;
   text-shadow: none;
 }
 
 .navTitle nav {
   text-align: center;
-  margin-top: 10px;
-  padding: 20px 20px 20px 20px;
-  background-color: rgba(0, 255, 0, 50%);
-  border-radius: 15px 15px 0px 0px;
-  margin: 0% 28%;
-  margin-top: 10px;
+  padding: 2vw;
+  background-color: transparent;
 }
 
 /* End Navigation Bar ---------------------------------------------------*/
@@ -94,34 +91,115 @@ a.nav:hover {
 /* Title + Background -------------------------------- */
 .navTitle {
   text-align: center;
-  background-image: url('../spongebobGif.gif') !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 60%);
+  margin: 0vw 25vw;
+}
+
+#coverVideo {
+  z-index:-1;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 .navTitle h {
-  background-color: rgba(0, 255, 0, .001);
-  text-shadow: -6px 4px 2px #cccccc;
+  background-color: transparent;
 }
 
 .navTitle .title {
-  padding: 13% 0%;
+  padding-top: 12vw;
   text-align: center;
-  font-size: 100px;
-  background-color: rgba(0, 255, 0, 50%);
-  margin: 0% 28%;
+  font-size: 3vw;
+  background-color: transparent;
 }
 
-.socials {
-  text-align: center;
-  background-color: rgba(0, 255, 0, 50%);
-  margin: 0% 28%;
-  border-radius: 0px 0px 15px 15px;
+.navTitle .title img {
+  top: 2vw;
+  left: 30vw;
+  background-color: transparent;
+  width: 40vw;
+  padding: 0.2vw 0vw 12vw 0vw;
 }
 
-.socials a.socialLogo img {
-  background-color: rgba(0, 255, 0, .001);
+.navTitle .socials {
+  padding-bottom: 2vw;
+  background-color: transparent;
+}
+
+.navTitle .socials a {
+  background-color: transparent;
+}
+
+.navTitle .socials a.socialLogo img {
+  background-color: transparent;
+  width: 3vw;
+  padding: 0vw .5vw;
 }
 
 /* End Title + Background -------------------------------- */
+
+/* About us styles ---------------------------------- */
+
+.aboutUs h1 {
+  font-size: 3vw;
+  color: rgb(0, 199, 0);
+  padding: 5vw 3vw 1vw 15vw;
+}
+
+.aboutUs .pText {
+  color: white;
+  font-size: 1.35vw;
+  padding: 0vw 55vw 10vw 15vw;
+}
+
+.aboutUs .teamPic {
+  margin: 0;
+  position: absolute;
+  width: 40vw;
+  top: 60vw;
+  left: 50vw;
+}
+
+.aboutUs .fun {
+  width: 2vw;
+  position: absolute;
+}
+
+.aboutUs .imgDescription {
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 90vw;
+  left: 76vw;
+  background-color: transparent;
+}
+/* End about us styles ---------------------------------- */
+
+/* Footer Styles ---------------------------- */
+footer {
+  align-items: center;
+}
+
+footer .socials {
+  padding: 2vw 0vw;
+  padding-left: 43vw;
+  background-color: transparent;
+}
+
+footer .socials a.socialLogo img {
+  background-color: transparent;
+  width: 3vw;
+  padding: 0vw .5vw;
+}
+
+footer .organizationInfo {
+  color: white;
+  padding-left: 27vw;
+  padding-bottom: .5vw;
+}
+
+/* End Footer Styles ------------------------ */
