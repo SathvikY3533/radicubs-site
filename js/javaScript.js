@@ -12,4 +12,14 @@
 // });
 //Search Bar Stuff ---------
 
+const homeLink = document.getElementById('home');
+const homeCode = document.getElementById('homePage');
+
+const sponsorsLink = document.getElementById('sponsor');
+
+// always checking if the element is clicked, if so, do alert('hello')
+homeLink.addEventListener("click", () => {
+    homeCode.style.visibility = "visible"
+});
+
 

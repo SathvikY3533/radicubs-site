@@ -66,7 +66,7 @@ a.nav {
   text-decoration: none;
   font-weight: bolder;
   color: black;
-  font-size: 1.25vw;
+  font-size: 1.15vw;
   transition: 0.5s;
   background-color: transparent;
   text-shadow: -.2vw .1vw 2px #cccccc;
@@ -84,6 +84,7 @@ a.nav:hover {
   text-align: center;
   padding: 2vw;
   background-color: transparent;
+  margin: 0;
 }
 
 /* End Navigation Bar ---------------------------------------------------*/
@@ -203,3 +204,29 @@ footer .organizationInfo {
 }
 
 /* End Footer Styles ------------------------ */
+
+
+
+/* Sponsors Page --------------------------- */
+nav {
+  margin: 0 28vw;
+  margin-top: 2.5vw;
+  text-align: center;
+}
+
+.sponsorsNav a {
+  color: white;
+}
+
+.sponsors {
+  font-size: 8vw;
+  color: white;
+  padding: 2vw 3vw 0vw 5vw;
+  text-align: center;
+}
+
+.aboutFooter {
+  background-color: black;
+}
+
+/* End Sponsors Page --------------------------- */

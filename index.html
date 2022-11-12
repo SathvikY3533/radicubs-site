@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
   <header>
-    <title>News</title>
+    <title>Radicubs!</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <script type="text/javascript" src="./js/navbar.js" defer></script>
+    <script type="text/javascript" src="./js/javaScript.js" defer></script>
   </header>
   <body>
-    <video autoplay muted loop id="coverVideo">
-      <source src="roboWebsiteCover.mp4" type="video/mp4">
-    </video>
     <div class="navTitle">
       <nav>
         <!-- <a href="#home" class="logo"><img src="transparent radicubs logo.png" class="img"></a> -->
-        <a href="#home" class="nav">Home</a>
-        <a href="#sponsors" class="nav">Sponsors</a>
+        <a href="index.html" class="nav" id="home">Home</a>
+        <a href="sponsors.html" class="nav" id="sponsor">Sponsors</a>
         <a href="#team" class="nav">Team</a>
         <a href="#spotlight" class="nav">Spotlight</a>
         <a href="#radiblog" class="nav">Radiblog</a>
@@ -26,34 +23,41 @@
           <a href="#signin" class="signin" class="small">Sign In</a>
         </navright> -->
       </nav>
-      <div class="title">
-        <h>We are</h>
-        <img src="images/radicubs_logo.png" alt="Radicubs">
-      </div>
-      <div class="socials">
-        <a href="https://instagram.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/instagramLogo.webp" alt="Instagram"></a>
-        <a href="https://youtube.com/channel/UCNuzQPRdm0OBcJaWgX8z6eQ" style="text-decoration: none;" class="socialLogo"><img src="images/youtubeLogo.webp" alt="Youtube"></a>
-        <a href="https://twitter.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/twitterLogo.webp" alt="Twitter"></a>
-      </div>
-    </div>
-    <div>
-      <div class="aboutUs">
-        <img src="images/radicubsTeam.webp" alt="Radicubs team picture" class="teamPic">
-        <!-- <img src="images/niharikaPushUp.jpg" alt="Radicubs at work" class="teamPic" style="width: 25vw !important;"> -->
-        <p class="imgDescription">2022 Radicubs Team</p>
-        <h1>Who we are</h1>
-        <p class="pText">The Radicubs Robotics Team is a community-based FRC team from Frisco, Texas. Our 25 students hail from 5 high schools across Frisco, representing our community through the FIRST Robotics Challenge and outreach. <br><br>Our purpose is to provide a free outlet for students of Frisco, Texas to pursue their interests in STEM and finance through the FIRST Robotics Competition (FRC). Our mission is to create an environment where anyone can pursue and explore their interests in robotics and entrepreneurship and help build interest for our future generations by engaging in community outreach activities with them.</p>
-      </div>
-      <footer>
-        <hr color = rgb(0, 199, 0) style="margin: 0vw 30vw;">
+    </div> 
+    <div id="homePage" style="background-color: transparent !important; visibility: visible;">
+      <div class="navTitle">
+        <div class="title">
+          <h>We are</h>
+          <img src="images/radicubs_logo.png" alt="Radicubs">
+        </div>
         <div class="socials">
           <a href="https://instagram.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/instagramLogo.webp" alt="Instagram"></a>
           <a href="https://youtube.com/channel/UCNuzQPRdm0OBcJaWgX8z6eQ" style="text-decoration: none;" class="socialLogo"><img src="images/youtubeLogo.webp" alt="Youtube"></a>
           <a href="https://twitter.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/twitterLogo.webp" alt="Twitter"></a>
         </div>
-        <p class="organizationInfo">The Radicubs Robotics Team is recognized as a non-profit organization under a 501(c)(3).</p>
-      </footer>
-    </div>
+      </div>
+      <div class="aboutFooter">
+        <div class="aboutUs">
+          <!-- <img src="images/radicubsTeam.webp" alt="Radicubs team picture" class="teamPic"> -->
+          <img src="images/niharikaPushUp.jpg" alt="Radicubs at work" class="teamPic" style="width: 25vw !important;">
+          <p class="imgDescription">2022 Radicubs Team</p>
+          <h1>Who we are</h1>
+          <p class="pText">The Radicubs Robotics Team is a community-based FRC team from Frisco, Texas. Our 25 students hail from 5 high schools across Frisco, representing our community through the FIRST Robotics Challenge and outreach. <br><br>Our purpose is to provide a free outlet for students of Frisco, Texas to pursue their interests in STEM and finance through the FIRST Robotics Competition (FRC). Our mission is to create an environment where anyone can pursue and explore their interests in robotics and entrepreneurship and help build interest for our future generations by engaging in community outreach activities with them.</p>
+        </div>
+        <footer>
+          <hr size="5" color = rgb(0, 199, 0) style="margin: 0vw 30vw; background-color: rgb(0, 199, 0);">
+          <div class="socials">
+            <a href="https://instagram.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/instagramLogo.webp" alt="Instagram"></a>
+            <a href="https://youtube.com/channel/UCNuzQPRdm0OBcJaWgX8z6eQ" style="text-decoration: none;" class="socialLogo"><img src="images/youtubeLogo.webp" alt="Youtube"></a>
+            <a href="https://twitter.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/twitterLogo.webp" alt="Twitter"></a>
+          </div>
+          <p class="organizationInfo">The Radicubs Robotics Team is recognized as a non-profit organization under a 501(c)(3).</p>
+        </footer>
+      </div>
+      <video autoplay muted loop id="coverVideo">
+        <source src="roboWebsiteCover.mp4" type="video/mp4">
+      </video>
+    </div>  
   </body>
 
 </html>
