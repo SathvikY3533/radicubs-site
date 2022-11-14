@@ -12,14 +12,28 @@
 // });
 //Search Bar Stuff ---------
 
+const nav = document.getElementById("commonNav");
+
 const homeLink = document.getElementById('home');
 const homeCode = document.getElementById('homePage');
 
-const sponsorsLink = document.getElementById('sponsor');
+const sponsorsLink = document.getElementById('sponsors');
+const sponsorsCode = document.getElementById('sponsorsPage');
 
-// always checking if the element is clicked, if so, do alert('hello')
+const teamLink = document.getElementById('team');
+const teamCode = document.getElementById('teamPage');
+
+
 homeLink.addEventListener("click", () => {
-    homeCode.style.visibility = "visible"
+    homeCode.style.display = "block";
+    sponsorsCode.style.display = "none";
+    nav.style.display = "none";
+});
+
+sponsorsLink.addEventListener("click", () => {
+    homeCode.style.display = "none";
+    sponsorsCode.style.display = "block";
+    nav.style.display = "block";
 });
 
 
