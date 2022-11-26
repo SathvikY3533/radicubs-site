@@ -9,7 +9,7 @@
 
 <!-- --------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------- -->
-    <div id="navContainer" class="container" onCLick="navBarSwitch(this), openNav()" onmouseleave="navBarSwitch(this), closeNav()">
+    <div id="navContainer" class="container" onCLick="openNav()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -19,13 +19,13 @@
       <div class="overlay-content">
         <nav id="NavBar" style="display: block;">
           <!-- <a href="#home" class="logo"><img src="transparent radicubs logo.png" class="img"></a> -->
-          <a href="#home" class="nav" id="home">Home</a>
-          <a href="#sponsors" class="nav" id="sponsors">Sponsors</a>
-          <a href="#team" class="nav" id="team">Team</a>
-          <a href="#spotlight" class="nav" id="spotlight">Spotlight</a>
-          <a href="#radiblog" class="nav" id="radiblog">Radiblog</a>
-          <a href="#contact" class="nav" id="contact">Contact Us</a>
-          <a href="#donate" class="nav" id="donate">Donate</a>
+          <a href="#home" class="nav" id="home" id="navFadeEffect">Home</a>
+          <a href="#sponsors" class="nav" id="sponsors" id="navFadeEffect">Sponsors</a>
+          <a href="#team" class="nav" id="team" id="navFadeEffect">Team</a>
+          <a href="#spotlight" class="nav" id="spotlight" id="navFadeEffect">Spotlight</a>
+          <a href="#radiblog" class="nav" id="radiblog" id="navFadeEffect">Radiblog</a>
+          <a href="#contact" class="nav" id="contact" id="navFadeEffect">Contact Us</a>
+          <a href="#donate" class="nav" id="donate" id="navFadeEffect">Donate</a>
           <!-- <navright>
           <div class="searchBar">
               <input type="text" id="search" name="search" placeholder="Search...">
@@ -100,9 +100,10 @@
 <!-- --------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------- -->
     <div id="contactUsPage" style="background-color: transparent !important; display: none;">
-      <h1 class="sponsors">Our Sponsers
+      <h1 class="contactUs">Contact Us
         <hr size="5" color = rgb(0, 199, 0) style="margin: 1.5vw 30vw 0vw 30vw; background-color: rgb(0, 199, 0);"><br>
       </h1>
+
       <footer>
         <hr size="5" color = rgb(0, 199, 0) style="margin: 22vh 30vw 8vh 30vw; background-color: rgb(0, 199, 0);">
         <div class="socials">

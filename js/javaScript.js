@@ -13,6 +13,7 @@
 //Search Bar Stuff ---------
 
 const nav = document.getElementById("NavBar");
+const navList = document.querySelectorAll('.nav');
 
 const homeLink = document.getElementById('home');
 const homeCode = document.getElementById('homePage');
@@ -39,22 +40,15 @@ sponsorsLink.addEventListener("click", () => {
     homeCode.style.display = "none";
     sponsorsCode.style.display = "block";
     contactUsCode.style.display = "none";
-
-    // nav.style.display = "block";
-    // nav.style = "margin: 0 28vw; margin-top: 2.5vw; text-align: center; text-color: white;";
 });
 
 contactUsLink.addEventListener("click", () => {
     homeCode.style.display = "none";
     sponsorsCode.style.display = "none";
     contactUsCode.style.display = "block";
-
-    // nav.style.display = "block";
-    // nav.style = "margin: 0 28vw; margin-top: 2.5vw; text-align: center; color: white;";
 });
 
-
-
+// ----------------------------------------------------------------------------------------------------
 
 function navBarSwitch(x) {
     x.classList.toggle("change");
@@ -62,10 +56,20 @@ function navBarSwitch(x) {
 
 function openNav() {
     document.getElementById("myNav").style.width = "45vw";
+    navList.forEach(navList => {
+        navList.style.opacity = '100%';
+        navList.style.transition = '.6s';
+        navList.style.fontSize = '1.25vw';
+    });
 }
   
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    navList.forEach(navList => {
+        navList.style.opacity = '0%';
+        navList.style.transition = '.3s';
+        navList.style.fontSize = '0vw';
+    });
 }
 
 
