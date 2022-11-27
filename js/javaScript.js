@@ -48,7 +48,7 @@ contactUsLink.addEventListener("click", () => {
     contactUsCode.style.display = "block";
 });
 
-// ----------------------------------------------------------------------------------------------------
+// ----------Nav Funtions ******8------------------------------------------------------------------------------------------
 
 function navBarSwitch(x) {
     x.classList.toggle("change");
@@ -72,4 +72,21 @@ function closeNav() {
     });
 }
 
+// ----------------------------------------------------------------------------------------------------
 
+
+
+// ------------Contact Us Form Function *****8----------------------------------------------------------------------------------------
+
+function lineHighlight(x) {
+    x.style.border = "none";
+    x.style.transition = "none";
+    x.style.borderBottom = "solid 2px rgb(0,199,0)";
+}
+
+function lineNormal(x) {
+    x.style.borderBottom = "solid 2px white";
+    x.style.transition = "initial";
+}
+
+// ----------------------------------------------------------------------------------------------------

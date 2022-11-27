@@ -8,24 +8,25 @@
   <body>
 
 <!-- --------------------------------------------------------------------- -->
+<!-- ------**************** Nav Menu Code **********************---------- -->
 <!-- --------------------------------------------------------------------- -->
-    <div id="navContainer" class="container" onCLick="openNav()">
+    <div id="navContainer" class="container" onCLick="openNav()" ondblclick="closeNav()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
     
-    <div id="myNav" class="overlay" onmouseover="openNav()" onmouseleave="closeNav()">
+    <div id="myNav" class="overlay" onmouseleave="closeNav()">
       <div class="overlay-content">
         <nav id="NavBar" style="display: block;">
           <!-- <a href="#home" class="logo"><img src="transparent radicubs logo.png" class="img"></a> -->
-          <a href="#home" class="nav" id="home" id="navFadeEffect">Home</a>
-          <a href="#sponsors" class="nav" id="sponsors" id="navFadeEffect">Sponsors</a>
-          <a href="#team" class="nav" id="team" id="navFadeEffect">Team</a>
-          <a href="#spotlight" class="nav" id="spotlight" id="navFadeEffect">Spotlight</a>
-          <a href="#radiblog" class="nav" id="radiblog" id="navFadeEffect">Radiblog</a>
-          <a href="#contact" class="nav" id="contact" id="navFadeEffect">Contact Us</a>
-          <a href="#donate" class="nav" id="donate" id="navFadeEffect">Donate</a>
+          <a href="#home" class="nav" id="home" id="navFadeEffect" onCLick="closeNav()">Home</a>
+          <a href="#sponsors" class="nav" id="sponsors" id="navFadeEffect" onCLick="closeNav()">Sponsors</a>
+          <a href="#team" class="nav" id="team" id="navFadeEffect" onCLick="closeNav()">Team</a>
+          <a href="#spotlight" class="nav" id="spotlight" id="navFadeEffect" onCLick="closeNav()">Spotlight</a>
+          <a href="#radiblog" class="nav" id="radiblog" id="navFadeEffect" onCLick="closeNav()">Radiblog</a>
+          <a href="#contact" class="nav" id="contact" id="navFadeEffect" onCLick="closeNav()">Contact Us</a>
+          <a href="#donate" class="nav" id="donate" id="navFadeEffect" onCLick="closeNav()">Donate</a>
           <!-- <navright>
           <div class="searchBar">
               <input type="text" id="search" name="search" placeholder="Search...">
@@ -38,6 +39,7 @@
 
 
 <!-- --------------------------------------------------------------------- -->
+<!-- ------**************** Home Page Code *********************---------- -->
 <!-- --------------------------------------------------------------------- -->
 
     <div id="homePage" style="background-color: transparent !important; display: block;">
@@ -74,6 +76,7 @@
     </div> 
 
 <!-- --------------------------------------------------------------------- -->
+<!-- ------**************** Sponsor Page Code ******************---------- -->
 <!-- --------------------------------------------------------------------- -->
 
     <div id="sponsorsPage" style="background-color: transparent !important; display: none;">
@@ -98,11 +101,30 @@
     </div>
 
 <!-- --------------------------------------------------------------------- -->
+<!-- ------**************** Contact Us Page Code ***************---------- -->
 <!-- --------------------------------------------------------------------- -->
     <div id="contactUsPage" style="background-color: transparent !important; display: none;">
-      <h1 class="contactUs">Contact Us
-        <hr size="5" color = rgb(0, 199, 0) style="margin: 1.5vw 30vw 0vw 30vw; background-color: rgb(0, 199, 0);"><br>
-      </h1>
+      <h1 class="contactUs">Contact Us</h1>
+
+      <form class="contactUsForm">
+        <label for="firstName" class="qLabel">First Name*</label>
+        <label for="lastName" class="qLabel" style="padding-left: 14.5vw">Last Name*</label>
+        <input id="firstName" name="firstName" class="qAns" type="text" id="contactInput" onClick="lineHighlight(this)" onmouseover="lineHighlight(this)" onmouseleave="lineNormal(this)" required />
+        <input id="lastName" name="lastName" class="qAns" type="text" id="contactInput" style="margin-left: 5vw; margin-bottom: 10%;" onClick="lineHighlight(this)" onmouseover="lineHighlight(this)" onmouseleave="lineNormal(this)" required />
+        
+        <label for="email" class="qLabel">Email*</label>
+        <label for="subject" class="qLabel" style="padding-left: 17.5vw">Subject*</label>
+        <input id="email" name="email" class="qAns" type="text" id="contactInput" onClick="lineHighlight(this)" onmouseover="lineHighlight(this)" onmouseleave="lineNormal(this)" required />
+        <input id="subject" name="subject" class="qAns" type="text" id="contactInput" style="margin-left: 5vw; margin-bottom: 10%;" onClick="lineHighlight(this)" onmouseover="lineHighlight(this)" onmouseleave="lineNormal(this)" required />
+ 
+        <label for="message" class="qLabel">Leave a Message*</label><br>
+        <textarea id="message" class="qAns" rows="5" cols="60" name="message" style="width: 98% !important; margin-bottom: 10%; padding-bottom: 20%;" onClick="lineHighlight(this)" onmouseover="lineHighlight(this)" onmouseleave="lineNormal(this)" required></textarea>
+
+        <button type="submit" class="submitButton">Submit</button>
+      </form>
+
+      <h3 class="applyNow">Apply Now</h3>
+      <button type="button" href="#" class="applyButton">Application Form</button>
 
       <footer>
         <hr size="5" color = rgb(0, 199, 0) style="margin: 22vh 30vw 8vh 30vw; background-color: rgb(0, 199, 0);">
@@ -114,6 +136,9 @@
         <p class="organizationInfo">The Radicubs Robotics Team is recognized as a non-profit organization under a 501(c)(3).</p>
       </footer>
     </div>
+
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
 
   </body>
 </html>
