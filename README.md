@@ -1,5 +1,4 @@
-# radicubs Website
-radicubs Website!
+# radicubs Website!
 
 Made from scratch using HTML, CSS, and JS
 Inspiration from the original radicubs Wix Site.
