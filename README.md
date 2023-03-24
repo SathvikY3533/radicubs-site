@@ -1,4 +1,7 @@
-# Radicubs Website
-Radicubs Independent (group of 4) Project
+# radicubs Website
+radicubs Website!
 
-By: Sathvik Yechuri, Akhil Chutkay, Mann Bellani, Sid Darapuram 
+Made from scratch using HTML, CSS, and JS
+Inspiration from the original radicubs Wix Site.
+
+By: Sathvik Yechuri, Akhil Chutkay, Mann Bellani 
