@@ -35,6 +35,57 @@ body {
    }
 }
 
+/* Mobile Navigation Bar Styeles---------------------------------------------------*/
+/* ---------------------------- ---------------------------------------------------*/
+
+@media only screen and (max-device-width: 380px) {
+  .overlay-content{visibility: none;}
+  .mobileNab{visibility:visible}
+  .mobileNav {
+    padding: .5vw;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.25vw;
+    transition: 0.5s;
+    background-color: transparent;
+    text-shadow: -3px 2px 2px #cccccc;
+  }
+  .mobileNav:hover {
+    background-color: black;
+    color: rgb(0, 199, 0);
+    border-radius: 8px;
+    font-size: 1.5vw;
+    text-shadow: none;
+  } 
+}
+
+/* if mobile device max width 480px
+@media only screen and (max-device-width: 480px) {
+ .mobile_device_480px{display: block;}
+ .desktop {display: none;}
+} */
+
+/* .mobileNav {
+  padding: .5vw;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  font-size: 1.25vw;
+  transition: 0.5s;
+  background-color: transparent;
+  text-shadow: -3px 2px 2px #cccccc;
+}
+
+.mobileNav:hover {
+  background-color: black;
+  color: rgb(0, 199, 0);
+  border-radius: 8px;
+  font-size: 1.5vw;
+  text-shadow: none;
+} */
+
+
 /* Start Navigation Bar ---------------------------------------------------*/
 
 /* a.signin:hover {
