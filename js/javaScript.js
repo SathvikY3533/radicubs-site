@@ -32,6 +32,7 @@ homeLink.addEventListener("click", () => {
     homeCode.style.display = "block";
     sponsorsCode.style.display = "none";
     contactUsCode.style.display = "none";
+    teamCode.style.display = "none";
 
     // nav.style.display = "block";
 });
@@ -40,12 +41,21 @@ sponsorsLink.addEventListener("click", () => {
     homeCode.style.display = "none";
     sponsorsCode.style.display = "block";
     contactUsCode.style.display = "none";
+    teamCode.style.display = "none";
 });
 
 contactUsLink.addEventListener("click", () => {
     homeCode.style.display = "none";
     sponsorsCode.style.display = "none";
     contactUsCode.style.display = "block";
+    teamCode.style.display = "none";
+});
+
+teamLink.addEventListener("click", () => {
+    homeCode.style.display = "none";
+    sponsorsCode.style.display = "none";
+    contactUsCode.style.display = "none";
+    teamCode.style.display = "block";
 });
 
 // ----------Nav Funtions ******8------------------------------------------------------------------------------------------
