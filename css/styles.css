@@ -21,7 +21,7 @@ body {
   background-color: transparent;
 }
 
-#homePage, #sponsorsPage, #team, #spotlight, #radiblog, #contactUsPage, #donate {
+#homePage, #sponsorsPage, #teamPage, #spotlight, #radiblog, #contactUsPage, #donate {
   animation: fadeInAnimation ease .8s;
   animation-fill-mode: backwards;
 }
@@ -383,6 +383,46 @@ footer .organizationInfo {
 }
 
 /* End Sponsors Page --------------------------- */
+
+
+
+
+/* Team Page --------------------------- */
+.teamTitle {
+  font-size: 8vw;
+  color: white;
+  text-align: center;
+}
+
+.teamTabs {
+  margin-left: 20%;
+}
+
+.teamTabs a {
+  font-size: 1.5vw;
+  padding: 5% 8%;
+  margin-left: 7%;
+  border: 2px solid rgb(0, 199, 0);
+  border-radius: 10px;
+}
+
+.teamTabs {
+  margin-left: 22%;
+}
+
+.teamTabs a:hover {
+  color:rgb(0, 199, 0);
+  border: 2px solid white;
+  font-size: 1.65vw;
+}
+
+.aboutFooter {
+  background-color: rgb(34, 34, 34);
+}
+/* End Team Page --------------------------- */
+
+
+
 
 
 /* Contact Us Page --------------------------- */

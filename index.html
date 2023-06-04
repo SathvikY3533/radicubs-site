@@ -10,7 +10,7 @@
 <!-- --------------------------------------------------------------------- -->
 <!-- ------**************** Nav Menu Code **********************---------- -->
 <!-- --------------------------------------------------------------------- -->
-    <div id="navContainer" class="container" onCLick="openNav()" ondblclick="closeNav()">
+    <div id="navContainer" class="container" onCLick="openNav()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -128,7 +128,7 @@
     <div id="contactUsPage" style="background-color: transparent !important; display: none;">
       <h1 class="contactUs">Contact Us</h1>
 
-      <form class="contactUsForm">
+      <form class="contactUsForm" method="post">
         <label for="firstName" class="qLabel">First Name*</label>
         <label for="lastName" class="qLabel" style="padding-left: 14.5vw">Last Name*</label>
         <input id="firstName" name="firstName" class="qAns" type="text" id="contactInput" onClick="lineHighlight(this)" onmouseover="lineHighlight(this)" onmouseleave="lineNormal(this)" required />
@@ -160,22 +160,22 @@
     </div>
 
     <!-- --------------------------------------------------------------------- -->
-<!-- ------**************** Sponsor Page Code ******************---------- -->
+<!-- ------**************** Team Page Code ******************---------- -->
 <!-- --------------------------------------------------------------------- -->
 
 <div id="teamPage" style="background-color: transparent !important; display: none;">
-  <h1 class="team">Our Team
-    <hr size="5" color = rgb(0, 199, 0) style="margin: 1.5vw 30% 0vw 30%; background-color: rgb(0, 199, 0);"><br>
+  <h1 class="teamTitle">Our Team
+    <hr size="5" color = rgb(0, 199, 0) style="margin: 3vh 30% 0vw 30%; background-color: rgb(0, 199, 0);"><br>
   </h1>
-  <div class="sponsorsTabs">
-    <div style="margin-bottom: 15%;">
+  <div class="teamTabs">
+    <div style="margin-bottom: 5%;">
       <a href="#">Mentors</a>
       <a href="#">Members</a>
     </div>  
-    <a href="#" id="becomeSponsor">Become a Sponsor!</a>
+    <!-- <a href="#" id="becomeSponsor">Become a Sponsor!</a> -->
   </div>
   <footer>
-    <hr size="5" color = rgb(0, 199, 0) style="margin: 22vh 30% 8vh 30%; background-color: rgb(0, 199, 0);">
+    <hr size="5" color = rgb(0, 199, 0) style="margin: 24vh 30% 8vh 30%; background-color: rgb(0, 199, 0);">
     <div class="socials">
       <a href="https://instagram.com/theradicubs" style="text-decoration: none;" class="socialLogo"><img src="images/instagramLogo.webp" alt="Instagram"></a>
       <a href="https://youtube.com/channel/UCNuzQPRdm0OBcJaWgX8z6eQ" style="text-decoration: none;" class="socialLogo"><img src="images/youtubeLogo.webp" alt="Youtube"></a>

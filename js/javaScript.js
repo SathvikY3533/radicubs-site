@@ -77,7 +77,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     navList.forEach(navList => {
         navList.style.opacity = '0%';
-        navList.style.transition = '.3s';
+        navList.style.transition = '.4s';
         navList.style.fontSize = '0vw';
     });
 }
