@@ -9,7 +9,7 @@
             "name": "Launch index.html",
             "type": "chrome",
             "request": "launch",
-            "reAttach": true,
+            // "reAttach": true,
             "file": "${workspaceFolder}/index.html"
         },
         {
