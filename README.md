@@ -3,4 +3,4 @@
 Made from scratch using HTML, CSS, and JS
 Inspiration from the original radicubs Wix Site.
 
-By: Sathvik Yechuri, Akhil Chutkay, Mann Bellani 
+By: Sathvik Yechuri, Mann Bellani, Akhil Chutkay
