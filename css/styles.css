@@ -16,12 +16,12 @@ a {
   color: white;
 }
 
-body {
+body, #pages {
   overflow-x: hidden;
   background-color: transparent;
 }
 
-#homePage, #sponsorsPage, #teamPage, #spotlight, #radiblog, #contactUsPage, #donate {
+#homePage, #sponsorsPage, #teamPage, #spotlight, #radiblog, #contactUsPage, #donate, #mobileNav, #myNav {
   animation: fadeInAnimation ease .8s;
   animation-fill-mode: backwards;
 }
@@ -36,54 +36,39 @@ body {
 }
 
 /* Mobile Navigation Bar Styeles---------------------------------------------------*/
-/* ---------------------------- ---------------------------------------------------*/
+@media only screen and (max-width: 1190px){
+  #mobileNav {
+    position: absolute;
+    z-index: 1;
+    top: 3vh;
+    left: 29.5%;
+    right: 28%;
+  }
 
-@media only screen and (max-device-width: 380px) {
-  .overlay-content{visibility: none;}
-  .mobileNab{visibility:visible}
-  .mobileNav {
-    padding: .5vw;
+  #mobileNav, .nav2 {
+    background: transparent;
+  }
+
+  #mobileNav a {
+    padding: 1%;
     text-decoration: none;
     font-weight: bolder;
-    color: black;
+    color: rgb(34, 34, 34);
     font-size: 1.25vw;
-    transition: 0.5s;
     background-color: transparent;
     text-shadow: -3px 2px 2px #cccccc;
   }
-  .mobileNav:hover {
-    background-color: black;
+
+  #mobileNav a:hover {
+    background-color: rgb(34, 34, 34);
     color: rgb(0, 199, 0);
     border-radius: 8px;
     font-size: 1.5vw;
+    transition: .5s;
     text-shadow: none;
-  } 
+  }
 }
-
-/* if mobile device max width 480px
-@media only screen and (max-device-width: 480px) {
- .mobile_device_480px{display: block;}
- .desktop {display: none;}
-} */
-
-/* .mobileNav {
-  padding: .5vw;
-  text-decoration: none;
-  font-weight: bolder;
-  color: black;
-  font-size: 1.25vw;
-  transition: 0.5s;
-  background-color: transparent;
-  text-shadow: -3px 2px 2px #cccccc;
-}
-
-.mobileNav:hover {
-  background-color: black;
-  color: rgb(0, 199, 0);
-  border-radius: 8px;
-  font-size: 1.5vw;
-  text-shadow: none;
-} */
+/* ---------------------------- ---------------------------------------------------*/
 
 
 /* Start Navigation Bar ---------------------------------------------------*/

@@ -14,6 +14,8 @@
 
 const nav = document.getElementById("NavBar");
 const navList = document.querySelectorAll('.nav');
+const navButton = document.getElementById('navButton');
+const mobileNav = document.getElementById('mobileNav');
 
 const homeLink = document.getElementById('home');
 const homeCode = document.getElementById('homePage');
@@ -58,6 +60,16 @@ teamLink.addEventListener("click", () => {
     teamCode.style.display = "block";
 });
 
+window.addEventListener('resize', () => {
+    if(window.innerWidth <= 1190) {
+        navButton.style.display = "none";
+        mobileNav.style.display = "block";
+    } else {
+        navButton.style.display = "block";
+        mobileNav.style.display = "none";
+    }
+});
+
 // ----------Nav Funtions ******8------------------------------------------------------------------------------------------
 
 function navBarSwitch(x) {
@@ -99,4 +111,12 @@ function lineNormal(x) {
     x.style.transition = "initial";
 }
 
-// ----------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------\
+
+if(window.innerWidth <= 1190) {
+    navButton.style.display = "none";
+    mobileNav.style.display = "block";
+} else {
+    navButton.style.display = "block";
+    mobileNav.style.display = "none";
+}
