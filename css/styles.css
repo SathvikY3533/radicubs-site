@@ -40,12 +40,12 @@ body, #pages {
   #mobileNav {
     position: absolute;
     z-index: 1;
-    top: 3vh;
+    top: 3.5vh;
     left: 29.5%;
     right: 28%;
   }
 
-  #mobileNav, .nav2 {
+  #mobileNav, #nav2 {
     background: transparent;
   }
 
@@ -61,11 +61,28 @@ body, #pages {
 
   #mobileNav a:hover {
     background-color: rgb(34, 34, 34);
-    color: rgb(0, 199, 0);
+    color: rgb(0, 199, 0) !important;
     border-radius: 8px;
     font-size: 1.5vw;
     transition: .5s;
     text-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 501px){
+
+  #mobileNav a {
+    padding: .8%;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(34, 34, 34);
+    font-size: 1.25vw;
+    background-color: transparent;
+    text-shadow: -3px 2px 2px #cccccc;
+  }
+
+  video {
+    display: none;
   }
 }
 /* ---------------------------- ---------------------------------------------------*/
@@ -339,6 +356,7 @@ footer .organizationInfo {
   font-size: 8vw;
   color: white;
   text-align: center;
+  margin-top: 8vh;
 }
 
 .sponsorsTabs {
